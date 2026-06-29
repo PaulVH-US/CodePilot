@@ -9,8 +9,8 @@ export const env = createEnv({
     // Server-only Supabase vars can go here if needed
   },
   client: {
-    NEXT_PUBLIC_SUPABASE_URL: z.string().url(),
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1),
+    NEXT_PUBLIC_SUPABASE_URL: z.string().url().optional(),
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().min(1).optional(),
   },
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
