@@ -7,8 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lumos App",
-  description: "Built with create-lumos-app",
+  title: "CodePilot — Understand More. Build Better.",
+  description:
+    "The AI-powered development companion that helps you write better prompts, understand generated code, and build software with confidence.",
 };
 
 export default function RootLayout({
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider>
           <Navbar />
